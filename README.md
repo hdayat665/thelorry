@@ -1,4 +1,4 @@
-# thelorry-iv
+# thelorry
 article thelorry
 
 Instruction.
