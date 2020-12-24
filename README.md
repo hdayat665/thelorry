@@ -13,3 +13,5 @@ username and password.
 1. admin@thelorry.com - admin
 2. user@thelorry.com - 12345
 3. nikos@thelorry.com - 12345
+
+if there any problem feel free to contact me tq!!
