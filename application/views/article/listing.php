@@ -6,7 +6,7 @@
 
 <div class="row">
   <div class="col">
-    <table id="stege1"  class="table">
+    <table id="stege1" class="table table-responsive">
       <thead class="thead-dark">
         <tr>
           <th width="2%">Article Code</th>
@@ -14,7 +14,7 @@
           <th width="10%">Article Description</th>
           <th width="2%">Published By</th>
           <th width="2%">Status</th>
-          <th width="3%">Action</th>
+          <th width="5%">Action</th>
         </tr>
       </thead>
       <tbody>

@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script src="https://use.fontawesome.com/286383e63b.js"></script>
-  <link rel="stylesheet" href="<?= base_url('/assets/dashboard.css') ?>">
   <link rel="stylesheet" href="<?= base_url('/assets/offcanvas.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('/assets/dashboard.css') ?>">
 
   <title>TheLorry</title>
 
@@ -26,20 +26,22 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">TheLorry Aricle</a>
-    <div class="form-control form-control-dark w-100">Welcome <?= $this->session->userdata['name'] ?></div>
-    <!-- <input class="form-control form-control-dark w-100" type="text" value=" > -->
-    <ul class="navbar-nav px-3">
-      <li class="nav-item text-nowrap">
+  <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0" href="#">TheLorry Aricle</a>
+  <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <span class="text-white"><?= $this->session->userdata['name'] ?></span>
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
         <a class="nav-link" href="<?= base_url('Admin/logout') ?>"><span class="fa fa-sign-out"></span> Sign out</a>
-      </li>
-    </ul>
-  </nav>
+    </li>
+  </ul>
+</header>
 
   <div class="container-fluid">
     <div class="row">
-      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+       <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
             <li class="nav-item">
@@ -81,6 +83,10 @@
         </main>
       </div>
     </div>
+      <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+      <!-- <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script> -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

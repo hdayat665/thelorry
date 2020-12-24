@@ -263,9 +263,10 @@ class Admin_model extends CI_Model {
 
 		$status = $post['status'];
 		$name = $post['acc_name'];
+		$username = $post['email'];
 		$acc_id = $post['acc_id'];
 
-		$sql = "UPDATE account SET  acc_name = '$name', status = '$status' WHERE acc_id = '$acc_id'";
+		$sql = "UPDATE account SET  acc_name = '$name', status = '$status', username = '$username' WHERE acc_id = '$acc_id'";
 
 		// pr($sql);
 		$data = $this->db->query($sql);

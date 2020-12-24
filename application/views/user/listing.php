@@ -6,7 +6,7 @@
 
 <div class="row">
   <div class="col">
-    <table id="stege1" class="table">
+    <table id="stege1" class="table table-responsive">
       <thead class="thead-dark">
         <tr>
           <th width="2%">Account Id</th>
